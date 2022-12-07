@@ -46,9 +46,12 @@ public class Exercicio1 {
 
         ListIterator <Double> iterator2 = temperaturas.listIterator();
 
+        if (iterator2.next() > soma/temperaturas.size()) {
+            System.out.println(iterator2.next() + " ");
+
         while (iterator2.hasNext()) {
-            if (iterator2.next() > (soma/temperaturas.size())) {
-                System.out.println(iterator.next() + " ");
+            if (iterator2.next() > soma/temperaturas.size()) {
+                System.out.println(iterator2.next() + " ");
                 
             }
             
@@ -92,4 +95,5 @@ public class Exercicio1 {
 
 
     
+}
 }
